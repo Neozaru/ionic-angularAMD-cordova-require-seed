@@ -7,7 +7,6 @@ define(['angularAMD', 'angular-ionic', 'angular-animate', 'angular-sanitize', 'a
   var app = angular.module('starter', ['ionic', 'ui.router']);
   app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-
     .state('app', angularAMD.route({
       url: "/app",
       abstract: true,
@@ -44,10 +43,10 @@ define(['angularAMD', 'angular-ionic', 'angular-animate', 'angular-sanitize', 'a
     .state('app.single', angularAMD.route({
       url: "/playlists/:playlistId",
       views: {
-        'menuContent': {
+        'menuContent': angularAMD.route({
           templateUrl: "templates/playlist.html",
           controller: 'PlaylistCtrl'
-        }
+        })
       }
     }));
     // if none of the above states are matched, use this as the fallback

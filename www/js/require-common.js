@@ -20,6 +20,7 @@ define([], function() {
       // Controllers
       'HomeCtrl': 'js/controllers/home.ctrl',
       'PlaylistsCtrl': 'js/controllers/playlists.ctrl',
+      'PlaylistCtrl': 'js/controllers/playlist.ctrl',
 
       /* Templates : You can centralize your templates URL here. 
       Template will be loaded with components using it. */
