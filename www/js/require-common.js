@@ -5,7 +5,7 @@ define([], function() {
       'require-text': 'lib/requirejs-text/text',
       'ngload': 'lib/angularAMD/ngload',
       'ionic': 'lib/ionic/js/ionic',
-      'cordova': '../cordova',
+      'cordova': 'cordova',
       
       'angular': 'lib/angular/angular',
       'angularAMD': 'lib/angularAMD/angularAMD',

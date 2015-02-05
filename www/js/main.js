@@ -1,9 +1,8 @@
 require(['require-common'], function(common) {
   require.config({
-    baseUrl: '/',
+    baseUrl: '',
     paths: common.paths,
-    shim: common.shim,
-    deps: ['app']
+    shim: common.shim
   });
 
 
@@ -19,7 +18,7 @@ require(['require-common'], function(common) {
     };
 
     var onDeviceReady = function () {
-        start()
+        start();
     };
 
     document.addEventListener("deviceready", onDeviceReady, false);
