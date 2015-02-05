@@ -1,7 +1,7 @@
 {
-  "name": "ionic-structure",
+  "name": "ionic-angularAMD-cordova-require-seed",
   "version": "1.0.0",
-  "description": "ionic-structure: An Ionic project",
+  "description": "ionic-structure: Adds requirejs supprot with AngularAMD helpers",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
