@@ -13,18 +13,14 @@ require(['require-common'], function(common) {
     'use strict';
 
     var start = function() {
+        /* Requires the app, bootstraping Angular in AMD mode */
         require(['app'], function(app) {
         });
     };
 
-    var onDeviceReady = function () {
-        start();
-    };
-
-    document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("deviceready", start, false);
 
     if (typeof cordova === 'undefined') {
-        /* Still useful ? */
         angular.element().ready(function () {
             try {
                 start()
