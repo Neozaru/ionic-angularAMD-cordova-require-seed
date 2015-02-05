@@ -2,6 +2,10 @@
   "name": "ionic-angularAMD-cordova-require-seed",
   "version": "1.0.0",
   "description": "ionic-structure: Adds requirejs supprot with AngularAMD helpers",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Neozaru/ionic-angularAMD-cordova-require-seed.git"
+  },
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
