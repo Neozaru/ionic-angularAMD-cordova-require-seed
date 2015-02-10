@@ -14,6 +14,7 @@ define([], function() {
       'angular-ui-router': 'lib/angular-ui-router/release/angular-ui-router',
       'angular-animate': 'lib/angular-animate/angular-animate',
       'angular-sanitize': 'lib/angular-sanitize/angular-sanitize',
+      'angular-mocks': 'lib/angular-mocks/angular-mocks',
 
       /* I chose to declare each Controller/Service/Directive here, 
          so I don't need to use path when requiring them in app and tests. */
@@ -47,6 +48,10 @@ define([], function() {
       'angular-cordova': ['angular'],
       'ionic': {
         exports: 'ionic'
+      },
+      'angular-mocks': {
+        deps:['angular'],
+        'exports':'angular.mock'
       }
     }
   };
